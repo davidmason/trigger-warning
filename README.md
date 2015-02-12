@@ -23,3 +23,5 @@ Planned:
    - Fade-in with some combinations of: contrast, colour depth, brightness, saturation, darkness, blur, size, resolution, random pixels.
    - Peel back a concealing cover, possibly with arbitrary points to grab the cover and peel it in any direction.
    - Pull image out from behind a cover, like removing it from an envelope.
+ - Query a central server to learn categories for content that the user has not yet flagged.
+ - Send category data to central server to contribute to the database of content categories.
