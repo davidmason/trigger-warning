@@ -1,0 +1,13 @@
+{
+  "title": "Trigger Warning",
+  "name": "trigger-warning",
+  "version": "1.0.0",
+  "description": "Teach your browser what you do not wish to see.",
+  "main": "index.js",
+  "author": "David Mason drdmason@gmail.com",
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+  },
+  "license": "MIT"
+}
