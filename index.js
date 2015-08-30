@@ -1,9 +1,17 @@
-var self = require('sdk/self');
+var pageMod = require('sdk/page-mod');
 
-// a dummy function, to show how tests work.
-// to see how to test this function, look at test/test-index.js
-function dummy(text, callback) {
-  callback(text);
-}
+pageMod.PageMod({
 
-exports.dummy = dummy;
+  // inject script to all pages
+  include: '*',
+
+  // script to inject (in ./data)
+  contentScriptFile: './check-images.js',
+
+  // runs when the script is attached to a page
+  onAttach: function (worker) {
+
+    // this shows how to communicate from the addon to the script
+    worker.port.emit('eventname', 'message');
+  }
+});
