@@ -25,3 +25,31 @@ Planned:
    - Pull image out from behind a cover, like removing it from an envelope.
  - Query a central server to learn categories for content that the user has not yet flagged.
  - Send category data to central server to contribute to the database of content categories.
+
+
+
+
+## Installation
+
+Package as a xpi, then install in Firefox in the standard way.
+
+To package as .xpi, in the project directory:
+
+```
+jpm xpi
+```
+
+
+To run a Firefox session with the plugin temporarily installed (e.g. during
+development):
+
+```
+jpm run
+```
+
+On my system this command does not properly find Firefox, so I have to also
+point to the Firefox binary:
+
+```
+jpm -b /usr/bin/firefox run
+```
